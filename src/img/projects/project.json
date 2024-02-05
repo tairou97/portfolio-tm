@@ -1,0 +1,18 @@
+{
+    "projects": [
+      { "id": 1, "name": "ImmoHub", "img": "../img/immohub.jpeg", "Website":"https://verc-test-neon.vercel.app/","description": "Unser Projekt, [Projektname" },
+      { "id": 2, "name": "Wetter App", "img": "img/Wetter.jpeg","Website":"weather-app-tairou97.vercel.app", "description": "This is a project" },
+      { "id": 3, "name": "Grid Layout", "img": "img/grid.jpeg","Website":"https://tairou97.github.io/Grid-Document-Layout/", "description": "This is a project" },
+      { "id": 4, "name": "A Grid Challange from Frontend Mentor", "img": "./data/img/frontend-moentor.jpeg","Website":"https://mini-projekt.vercel.app/", "description": "This is a project" },
+      { "id": 5, "name": "Responsive Card", "img": "./data/img/single-price-grid.jpeg", "Website":"https://tairoumou.com/z-projekte/single-price-grid-component-master%20Kopie/index.html","description": "This is a project" },
+      { "id": 6, "name": "Testimonials Grid Section", "img": "./data/img/testimonials-grid.jpeg", "Website":"https://tairoumou.com/z-projekte/1-testimonials-grid-section-main/testimonials-grid.html","description": "This is a project" },
+        { "id": 7, "name": "Column Preview Card", "img": "./data/img/3-column-preview-card.jpeg", "Website":"https://tairoumou.com/z-projekte/3_3-column-preview-card-component-main%20Kopie/index.html","description": "This is a project" }
+    ], 
+
+    "employees": [
+        { "id": 1, "name": "John Doe", "position": "Developer" },
+        { "id": 2, "name": "Jane Smith", "position": "Designer" },
+        { "id": 3, "name": "Alice Johnson", "position": "Project Manager" }
+      ]
+  }
+  

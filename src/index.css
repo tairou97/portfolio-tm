@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.h1 {
+  font-size: 54px;
+  /* Ändern Sie die Schriftgröße entsprechend Ihrer Anforderungen */
+  line-height: 120%;
+  /* Ändern Sie die Zeilenhöhe entsprechend Ihrer Anforderungen */
+  font-family: var(--font-primary);
+  /* Ändern Sie die Schriftart entsprechend Ihrer Anforderungen */
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: -0.05em;
+  /* Ändern Sie den Buchstabenspacing entsprechend Ihrer Anforderungen */
+  margin-bottom: 2rem;
+  /* Ändern Sie den Abstand nach unten entsprechend Ihrer Anforderungen */
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 108px;
+    /* Ändern Sie die Schriftgröße entsprechend Ihrer Anforderungen */
+  }
+}
+
+@layer base {
+  body {
+    @apply overflow-hidden text-primary font-secondary bg-white
+  }
+
+  /* .h1 {
+    @apply text-[54px] lg: text-[108px] font-primary font-bold capitalize leading-[120%] tracking-[-0.05em] mb-2
+  } */
+
+  .section {
+    @apply h-screen w-screen
+  }
+
+  .btn {
+    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base uppercase font-secondary font-semibold bg-primary text-white
+  }
+}
