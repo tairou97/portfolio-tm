@@ -16,7 +16,8 @@ const About = () => {
       animate={{ scale: 1, y: 0 }}
       exit={{ scale: 0, y: "100%" }}
       transition={transition1}
-      className="section"
+      className="section  "
+      id="about"
     >
       <div className="container mx-auto h-full relative">
         {/* text & img wrapper */}
@@ -51,12 +52,22 @@ const About = () => {
               erlernt. Mein Ziel ist es, meine Fähigkeiten weiter auszubauen und
               komplexe Webanwendungen zu entwickeln.
             </p>
-            <div className="flex gap-5 flex-wrap">
+            <div className="flex gap-5 flex-wrap justify-center">
               {" "}
-              <Link to={"/projects"} className="btn">
+              <Link
+                to={"/projects"}
+                className="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View my work
               </Link>
-              <Link to={Lebenslauf} className="btn mb-[30px]">
+              <Link
+                to={Lebenslauf}
+                className="btn mb-[30px]"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 my resume
               </Link>
             </div>

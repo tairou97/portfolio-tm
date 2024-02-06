@@ -43,13 +43,15 @@ const Home = () => {
             >
               Berlin, Germany
             </p>
-            <div className="flex gap-5">
-              <Link to={"/contact"} className="btn mb-[30px]">
+            <div className="flex gap-5 ">
+              <Link to={"/contact"} className="btn mb-[30px] ">
                 hire me
               </Link>
               <Link
                 to="mailto:deine_email@example.com"
-                className="btn mb-[30px]"
+                className="btn mb-[30px] "
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 contact me
               </Link>

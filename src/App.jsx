@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { CursorContext } from "./context/CursorContext";
+import About from "./pages/About";
 
 function App() {
   const { cursorVariants, cursorBg } = useContext(CursorContext);
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <AnimRoutes />
       </Router>
+
       {/* cursor */}
       <motion.div
         variants={cursorVariants}
