@@ -54,20 +54,10 @@ const About = () => {
             </p>
             <div className="flex gap-5 flex-wrap justify-center">
               {" "}
-              <Link
-                to={"/projects"}
-                className="btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to={"/projects"} className="btn">
                 View my work
               </Link>
-              <Link
-                to={Lebenslauf}
-                className="btn mb-[30px]"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to={Lebenslauf} target="_blank" className="btn mb-[30px]">
                 my resume
               </Link>
             </div>
