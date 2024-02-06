@@ -41,17 +41,16 @@ const Projects = () => {
           >
             <h1 className="h1">Projects</h1>
             <p className=" mb-12 max-w-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              perspiciatis libero ratione hic iusto voluptatum assumenda
-              <b> quisquam et ipsa beatae </b>
-              atque sunt vel saepe impedit nobis tempore? Voluptates,
-              praesentium ad.
-              <br />
-              <br />
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis velit asperiores aspernatur ratione nihil, eos odio
-              possimus veritatis at officiis ex molestias. Reprehenderit error
-              tenetur, officiis quia facere sed consequuntur?
+              Als Webentwickler entwickle ich maßgeschneiderte Lösungen für
+              Kunden und Benutzer. In Zusammenarbeit mit Designern gestalte ich
+              innovative Webanwendungen, kommuniziere mit Kunden, plane und
+              entwickle Projekte sowie sichere die Zuverlässigkeit der
+              Anwendungen. Durch <br /> <br /> kontinuierliche Weiterbildung
+              halte ich mich über neue Technologien auf dem Laufenden, um stets
+              innovative Lösungen anzubieten. Die Arbeit als Webentwickler ist
+              für mich nicht nur ein Beruf, sondern auch eine Leidenschaft, da
+              sie mir ermöglicht, kreative Lösungen zu entwickeln und zum
+              Wachstum des Internets beizutragen.
             </p>
             <Link to={"/contact"} className="btn mb-[30px] mx-auto lg:mx-0 ">
               Hire me
@@ -66,7 +65,7 @@ const Projects = () => {
             {/* img  */}
             <div
               className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
+            h-[187px] lg:h-[220px] bg-accent overflow-hidden 
             "
             >
               <img

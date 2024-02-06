@@ -1,5 +1,6 @@
 import React from "react";
 import TImg from "../img/header/t.png";
+import Lebenslauf from "../img/about/leb.pdf";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
@@ -17,11 +18,7 @@ const About = () => {
       transition={transition1}
       className="section"
     >
-      <div
-        onMouseEnter={mouserEnter}
-        onMouseLeave={mouseLeaverEnter}
-        className="container mx-auto h-full relative"
-      >
+      <div className="container mx-auto h-full relative">
         {/* text & img wrapper */}
         <div
           className=" flex flex-col lg:flex-row  
@@ -38,25 +35,31 @@ const About = () => {
             animate={{ scale: 1, y: 0 }}
             exit={{ scale: 0, y: "-80%" }}
             transition={transition1}
+            onMouseEnter={mouserEnter}
+            onMouseLeave={mouseLeaverEnter}
             className="flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start"
           >
             <h1 className="h1">About me</h1>
             <p className=" mb-12 max-w-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              perspiciatis libero ratione hic iusto voluptatum assumenda
-              <b> quisquam et ipsa beatae </b>
-              atque sunt vel saepe impedit nobis tempore? Voluptates,
-              praesentium ad.
-              <br />
-              <br />
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Blanditiis velit asperiores aspernatur ratione nihil, eos odio
-              possimus veritatis at officiis ex molestias. Reprehenderit error
-              tenetur, officiis quia facere sed consequuntur?
+              Ich bin ein angehender Webentwickler, der sich in einer
+              Weiterbildung befindet. Bisher habe ich <b>HTML, CSS, SASS,</b>
+              <br /> <br />
+              <b>
+                {" "}
+                Bootstrap, Tailwind CSS, WindiCSS, JavaScript, Node.js und React
+              </b>
+              erlernt. Mein Ziel ist es, meine Fähigkeiten weiter auszubauen und
+              komplexe Webanwendungen zu entwickeln.
             </p>
-            <Link to={"/projects"} className="btn">
-              View my work
-            </Link>
+            <div className="flex gap-5 flex-wrap">
+              {" "}
+              <Link to={"/projects"} className="btn">
+                View my work
+              </Link>
+              <Link to={Lebenslauf} className="btn mb-[30px]">
+                my resume
+              </Link>
+            </div>
           </motion.div>
         </div>
       </div>
