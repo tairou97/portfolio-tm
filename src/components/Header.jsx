@@ -3,8 +3,11 @@ import Socials from "./Socials";
 import Logo from "../img/header/logo-transparent.png";
 import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CursorContext } from "../context/CursorContext";
 
 const Header = () => {
+  const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
   const Nav = [
     { id: 1, name: "Home", to: "/" },
     { id: 2, name: "About", to: "/about" },
@@ -20,11 +23,20 @@ const Header = () => {
     >
       <div className="flex  flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* Logo */}
-        <Link to={"/"} className="max-w-[200px]">
+        <Link
+          onMouseEnter={mouserEnter}
+          onMouseLeave={mouseLeaverEnter}
+          to={"/"}
+          className="max-w-[200px]"
+        >
           <img className="w-20" src={Logo} alt="" />
         </Link>
         {/* Nav */}
-        <nav className="hidden xl:flex  list-none gap-x-12 font-semibold">
+        <nav
+          onMouseEnter={mouserEnter}
+          onMouseLeave={mouseLeaverEnter}
+          className="hidden xl:flex  list-none gap-x-12 font-semibold"
+        >
           {Nav.map((nav) => {
             return (
               <li key={nav.id}>

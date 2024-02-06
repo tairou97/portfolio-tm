@@ -5,12 +5,24 @@ import Img from "../img/projects/Weather.png";
 import Img1 from "../img/projects/single-price-grid.png";
 import Img2 from "../img/projects/Column-Preview-Card.png";
 import Img3 from "../img/projects/Grid-Layout.png";
+import { motion } from "framer-motion";
+import { transition1 } from "../transition";
+import { useContext } from "react";
+import { CursorContext } from "../context/CursorContext";
 
 const Projects = () => {
+  const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
   const [projects, setProjects] = useState(Json.projects);
   console.log(projects[0].name);
+
   return (
-    <section className="section ">
+    <motion.section
+      initial={{ scale: 0, y: "100%" }}
+      animate={{ scale: 1, y: 0 }}
+      exit={{ scale: 0, y: "100%" }}
+      transition={transition1}
+      className="section "
+    >
       <div className="container  mx-auto h-full relative">
         <div
           className="flex flex-col lg:flex-row h-full 
@@ -18,7 +30,15 @@ const Projects = () => {
           pt-24 lg:pt-36 pb-8"
         >
           {/* text */}
-          <div className="flex flex-col lg:items-start">
+          <motion.div
+            initial={{ scale: 0, y: "-80%" }}
+            animate={{ scale: 1, y: 0 }}
+            exit={{ scale: 0, y: "-80%" }}
+            transition={transition1}
+            onMouseEnter={mouserEnter}
+            onMouseLeave={mouseLeaverEnter}
+            className="flex flex-col lg:items-start"
+          >
             <h1 className="h1">Projects</h1>
             <p className=" mb-12 max-w-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
@@ -36,9 +56,13 @@ const Projects = () => {
             <Link to={"/contact"} className="btn mb-[30px] mx-auto lg:mx-0 ">
               Hire me
             </Link>
-          </div>
+          </motion.div>
           {/* img  grid*/}
-          <div className="grid grid-cols-2 lg:gap-2">
+          <div
+            onMouseEnter={mouserEnter}
+            onMouseLeave={mouseLeaverEnter}
+            className="grid grid-cols-2 lg:gap-2"
+          >
             {/* img  */}
             <div
               className="max-w-[250px] lg:max-w-[320px] 
@@ -94,7 +118,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

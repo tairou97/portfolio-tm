@@ -1,4 +1,7 @@
 import React from "react";
+
+import { useContext } from "react";
+import { CursorContext } from "../context/CursorContext";
 import {
   FaGithub,
   FaLinkedin,
@@ -7,6 +10,7 @@ import {
   FaSlack,
 } from "react-icons/fa";
 const Socials = () => {
+  const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
   const socials = [
     {
       id: 1,
@@ -32,7 +36,11 @@ const Socials = () => {
   ];
 
   return (
-    <div className="hidden xl:flex ml-24">
+    <div
+      onMouseEnter={mouserEnter}
+      onMouseLeave={mouseLeaverEnter}
+      className="hidden xl:flex ml-24"
+    >
       <ul className="flex gap-x-4">
         {socials.map((social) => (
           <a
