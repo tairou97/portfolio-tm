@@ -20,7 +20,12 @@ function App() {
         variants={cursorVariants}
         animate={cursorBg}
         className="w-[32px] h-[32px] bg-primary   fixed top-0 left-0  pointer-events-none z-50 rounded-full"
-      ></motion.div>
+      >
+        <Router>
+          <Header />
+          <AnimRoutes />
+        </Router>
+      </motion.div>
     </>
   );
 }
