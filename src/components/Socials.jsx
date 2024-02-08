@@ -60,8 +60,6 @@ const Socials = () => {
               <FaGithub />
             ) : social.name === "LinkedIn" ? (
               <FaLinkedin />
-            ) : social.name === "Discord" ? (
-              <FaDiscord />
             ) : social.name === "Xing" ? (
               <FaXing />
             ) : social.name === "Slack" ? (
