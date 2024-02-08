@@ -16,22 +16,37 @@ const Socials = () => {
       id: 1,
       name: "GitHub",
       href: " https://github.com/tairou97 ",
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
     {
       id: 2,
       name: "LinkedIn",
       href: " https://www.linkedin.com/in/tairou-mouhamed-744955160/ ",
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
-    { id: 3, name: "Discord", href: " 602578888320745492 " },
+    {
+      id: 3,
+      name: "Discord",
+      href: " 602578888320745492 ",
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+
     {
       id: 4,
       name: "Xing",
       href: " https://www.xing.com/profile/Tairou_Mouhamed/web_profiles ",
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
     {
       id: 5,
       name: "Slack",
       href: " https://dcistudents.slack.com/team/U05EL1G9JJ3 ",
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
   ];
 
