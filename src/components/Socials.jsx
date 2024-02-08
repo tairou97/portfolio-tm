@@ -2,13 +2,7 @@ import React from "react";
 
 import { useContext } from "react";
 import { CursorContext } from "../context/CursorContext";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaDiscord,
-  FaXing,
-  FaSlack,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaXing, FaSlack } from "react-icons/fa";
 const Socials = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
   const socials = [
@@ -54,6 +48,8 @@ const Socials = () => {
           <a
             key={social.id}
             href={social.href}
+            target={social.target}
+            rel={social.rel}
             className="text-3xl text-primary ml-4"
           >
             {social.name === "GitHub" ? (

@@ -41,7 +41,7 @@ const Header = () => {
             return (
               <li key={nav.id}>
                 <Link
-                  className="text-[#696c6d] hover:text-primary transition"
+                  className="text-[#080808] hover:text-primary transition"
                   to={nav.to}
                 >
                   {nav.name}
