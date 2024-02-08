@@ -26,23 +26,16 @@ const Socials = () => {
       target: "_blank",
       rel: "noopener noreferrer",
     },
-    {
-      id: 3,
-      name: "Discord",
-      href: " 602578888320745492 ",
-      target: "_blank",
-      rel: "noopener noreferrer",
-    },
 
     {
-      id: 4,
+      id: 3,
       name: "Xing",
       href: " https://www.xing.com/profile/Tairou_Mouhamed/web_profiles ",
       target: "_blank",
       rel: "noopener noreferrer",
     },
     {
-      id: 5,
+      id: 4,
       name: "Slack",
       href: " https://dcistudents.slack.com/team/U05EL1G9JJ3 ",
       target: "_blank",
