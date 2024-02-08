@@ -1,40 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Json from "../img/projects/project.json";
-import Img from "../img/projects/Weather.png";
-import Img1 from "../img/projects/single-price-grid.png";
-import Img2 from "../img/projects/Column-Preview-Card.png";
-import Img3 from "../img/projects/Grid-Layout.png";
+
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { useContext } from "react";
 import { CursorContext } from "../context/CursorContext";
-// import { IoLogoJavascript } from "react-icons/io";
-// import { SiTailwindcss } from "react-icons/si";
-// import { SiReact } from "react-icons/si";
-// import { SiHtml5 } from "react-icons/si";
-// import { SiCss3 } from "react-icons/si";
-// import { SiSass } from "react-icons/si";
-// import { SiNodeDotJs } from "react-icons/si";
-
-// import { SiGit } from "react-icons/si";
-// import { SiGithub } from "react-icons/si";
-
-// import { SiVisualstudiocode } from "react-icons/si";
-// import { SiFigma } from "react-icons/si";
-
-// import { SiJavascript } from "react-icons/si";
-
-// import { SiBootstrap } from "react-icons/si";
-
-// import { SiNpm } from "react-icons/si";
-
-// import { SiPostman } from "react-icons/si";
 
 const Skills = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
-  const [projects, setProjects] = useState(Json.projects);
-  console.log(projects[0].name);
 
   return (
     <motion.section
