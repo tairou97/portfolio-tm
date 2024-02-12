@@ -13,7 +13,7 @@ import { CursorContext } from "../context/CursorContext";
 const Projects = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
   const [projects, setProjects] = useState(Json.projects);
-  console.log(projects[0].name);
+  console.log(projects.name);
 
   return (
     <motion.section
@@ -57,64 +57,31 @@ const Projects = () => {
             </Link>
           </motion.div>
           {/* img  grid*/}
-          <div
-            onMouseEnter={mouserEnter}
-            onMouseLeave={mouseLeaverEnter}
-            className="grid grid-cols-2 lg:gap-2"
-          >
-            {/* img  */}
+
+          {projects.map((project) => (
             <div
-              className="max-w-[250px] lg:max-w-[320px] 
+              onMouseEnter={mouserEnter}
+              onMouseLeave={mouseLeaverEnter}
+              className="grid grid-cols-2 lg:gap-2"
+              key={project.id}
+              onClick={() => setProjects(project)}
+            >
+              <div
+                className="max-w-[250px] lg:max-w-[320px] 
             h-[187px] lg:h-[220px] bg-accent overflow-hidden 
             "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
+              >
+                <Link to={project.Website}>
+                  <img
+                    className="object-cover h-full lg:h-[220px] hover:scale-110 
                 transition-all duration-500 "
-                src={Img}
-                alt=""
-              />
+                    src={project.img}
+                    alt=""
+                  />
+                </Link>
+              </div>
             </div>
-
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                src={Img1}
-                alt=""
-              />
-            </div>
-
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                src={Img2}
-                alt=""
-              />
-            </div>
-
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                src={Img3}
-                alt=""
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </motion.section>

@@ -2,10 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
 
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Protest Riot', sans-serif;
 }
+
+
+.root {
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  /* Mindesthöhe des Viewports */
+}
+
 
 .h1 {
   font-size: 54px;

@@ -50,6 +50,7 @@ const Header = () => {
             );
           })}
         </nav>
+        <p>lorem*500</p>
       </div>
       {/* Socials */}
       <Socials />
