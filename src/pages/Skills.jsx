@@ -63,7 +63,7 @@ const Skills = () => {
             "
             >
               <img
-                src="https://rapidapi.com/blog/wp-content/uploads/2018/06/logo-2582748_640.png"
+                // src="https://rapidapi.com/blog/wp-content/uploads/2018/06/logo-2582748_640.png"
                 alt=""
               />
             </div>
@@ -76,9 +76,9 @@ const Skills = () => {
               <img
                 className="object-cover h-full lg:h-[220px] hover:scale-110 
                 transition-all duration-500 "
-                src={
-                  "https://rithmapp.s3-us-west-2.amazonaws.com/assets/node-logo.png"
-                }
+                // src={
+                //   "https://rithmapp.s3-us-west-2.amazonaws.com/assets/node-logo.png"
+                // }
                 alt=""
               />
             </div>
@@ -91,9 +91,9 @@ const Skills = () => {
               <img
                 className="object-cover h-full lg:h-[220px] hover:scale-110 
                 transition-all duration-500 "
-                src={
-                  "https://k2bindia.com/wp-content/uploads/2015/08/React.png"
-                }
+                // src={
+                //   "https://k2bindia.com/wp-content/uploads/2015/08/React.png"
+                // }
                 alt=""
               />
             </div>
@@ -106,9 +106,9 @@ const Skills = () => {
               <img
                 className="object-cover h-full lg:h-[220px] hover:scale-110 
                 transition-all duration-500 "
-                src={
-                  "https://www.ankitweblogic.com/javascript/js_img/javascript.png"
-                }
+                // src={
+                //   "https://www.ankitweblogic.com/javascript/js_img/javascript.png"
+                // }
                 alt=""
               />
             </div>
@@ -121,9 +121,9 @@ const Skills = () => {
               <img
                 className="object-cover h-full lg:h-[220px] hover:scale-110 
                 transition-all duration-500 "
-                src={
-                  "https://miro.medium.com/v2/resize:fit:1358/1*xwAIUbfad95lsuGf2n9nnA.jpeg"
-                }
+                // src={
+                //   "https://miro.medium.com/v2/resize:fit:1358/1*xwAIUbfad95lsuGf2n9nnA.jpeg"
+                // }
                 alt=""
               />
             </div>
@@ -136,9 +136,9 @@ const Skills = () => {
               <img
                 className="object-cover h-full lg:h-[220px] hover:scale-110 
                 transition-all duration-500 "
-                src={
-                  "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png"
-                }
+                // src={
+                //   "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png"
+                // }
                 alt=""
               />
             </div>

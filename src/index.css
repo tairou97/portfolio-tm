@@ -47,7 +47,7 @@ html {
 
 @layer base {
   body {
-    @apply overflow-hidden text-primary font-secondary bg-white
+    @apply text-primary font-secondary bg-white
   }
 
   /* .h1 {
