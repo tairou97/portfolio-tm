@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header
       className=" fixed w-full px-[30px]
-  lg:px-[100px] z-30 h-[100px] lg:h[140px] flex items-center j"
+  lg:px-[100px] z-30 h-[100px] lg:h[140px] flex items-center justify-between bg-white shadow-xl  transition-all duration-300 ease-in-out"
     >
       <div className="flex  flex-col lg:flex-row lg:items-center w-full justify-between">
         {/* Logo */}
@@ -41,7 +41,7 @@ const Header = () => {
             return (
               <li key={nav.id}>
                 <Link
-                  className="text-[#080808] hover:text-primary transition"
+                  className="text-[#080808]87 hover:text-primary transition"
                   to={nav.to}
                 >
                   {nav.name}

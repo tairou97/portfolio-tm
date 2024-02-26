@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Json from "../img/projects/project.json";
-import Img from "../img/projects/Weather.png";
-import Img1 from "../img/projects/single-price-grid.png";
-import Img2 from "../img/projects/Column-Preview-Card.png";
-import Img3 from "../img/projects/Grid-Layout.png";
+import "../pages/project.css";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { useContext } from "react";
@@ -13,7 +10,7 @@ import { CursorContext } from "../context/CursorContext";
 const Projects = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
   const [projects, setProjects] = useState(Json.projects);
-  console.log(projects.name);
+  console.log("projects", projects);
 
   return (
     <motion.section
@@ -21,12 +18,12 @@ const Projects = () => {
       animate={{ scale: 1, y: 0 }}
       exit={{ scale: 0, y: "100%" }}
       transition={transition1}
-      className="section "
+      className="section flex items-center justify-center  bg-[#f5f5f5]"
     >
-      <div className="container  mx-auto h-full relative">
+      <div className="container  mx-auto h-full ">
         <div
-          className="flex flex-col lg:flex-row h-full 
-          items-center justify-start gap-x-24 text-center lg:text-left
+          className="h-full 
+    gap-x-24 text-center lg:text-left
           pt-24 lg:pt-36 pb-8"
         >
           {/* text */}
@@ -37,10 +34,10 @@ const Projects = () => {
             transition={transition1}
             onMouseEnter={mouserEnter}
             onMouseLeave={mouseLeaverEnter}
-            className="flex flex-col lg:items-start"
+            className="flex flex-col lg:items-center w-full  "
           >
             <h1 className="h1">Projects</h1>
-            <p className=" mb-12 max-w-sm">
+            <p className=" mb-12 max-w-xl p-1 text-center">
               Als Webentwickler entwickle ich maßgeschneiderte Lösungen für
               Kunden und Benutzer. In Zusammenarbeit mit Designern gestalte ich
               innovative Webanwendungen, kommuniziere mit Kunden, plane und
@@ -57,31 +54,38 @@ const Projects = () => {
             </Link>
           </motion.div>
           {/* img  grid*/}
-
-          {projects.map((project) => (
-            <div
-              onMouseEnter={mouserEnter}
-              onMouseLeave={mouseLeaverEnter}
-              className="grid grid-cols-2 lg:gap-2"
-              key={project.id}
-              onClick={() => setProjects(project)}
-            >
-              <div
-                className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden 
-            "
+          <div className="box-pro ">
+            {projects.map((proj) => (
+              <motion.div
+                initial={{ scale: 0, y: "80%" }}
+                animate={{ scale: 1, y: 0 }}
+                exit={{ scale: 0, y: "80%" }}
+                transition={transition1}
+                className=" proje   "
+                key={proj.id}
               >
-                <Link to={project.Website}>
-                  <img
-                    className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                    src={project.img}
-                    alt=""
-                  />
+                <Link
+                  to={proj.Website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className=" rounded-lg" src={proj.img} />
                 </Link>
-              </div>
-            </div>
-          ))}
+
+                <h1 className=" p-5">{proj.name}</h1>
+                {/* <p className=" mb-12 max-w-sm">{proj.description}</p> */}
+                <button className="btn mb-[30px]  mt-10 justify-center flex items-center">
+                  <Link
+                    to={proj.Website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </Link>
+                </button>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </motion.section>
@@ -89,22 +93,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-{
-  /* <div className="container  mx-auto h-full relative">
-        {projects.map((project) => (
-          <div
-            className="flex flex-col lg:flex-row h-full 
-          items-center justify-start gap-x-24 text-center lg:text-left
-          pt-24 lg:pt-36 pb-8
-
-          "
-            key={project.id}
-          >
-            <h1>{project.name}</h1>
-            <p>{project.description}</p>
-            <img src={project.img} alt={project.name} />
-          </div>
-        ))}
-      </div> */
-}

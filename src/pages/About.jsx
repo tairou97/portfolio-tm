@@ -19,7 +19,7 @@ const About = () => {
       className="section  "
       id="about"
     >
-      <div className="container mx-auto h-full relative">
+      <div className="container mx-auto h-full ">
         {/* text & img wrapper */}
         <div
           className=" flex flex-col lg:flex-row  
