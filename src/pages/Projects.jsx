@@ -18,7 +18,7 @@ const Projects = () => {
       animate={{ scale: 1, y: 0 }}
       exit={{ scale: 0, y: "100%" }}
       transition={transition1}
-      className="section flex items-center justify-center  bg-[#f5f5f5]"
+      className=" flex items-center justify-center  bg-[#f5f5f5]"
     >
       <div className="container  mx-auto h-full ">
         <div
