@@ -72,9 +72,9 @@ const Projects = () => {
                   <img className=" rounded-lg" src={proj.img} />
                 </Link>
 
-                <h1 className=" p-5">{proj.name}</h1>
+                <h1 className=" p-3">{proj.name}</h1>
                 {/* <p className=" mb-12 max-w-sm">{proj.description}</p> */}
-                <button className="btn mb-[30px]  mt-10 justify-center flex items-center">
+                <button className="btn    justify-center flex items-center">
                   <Link
                     to={proj.Website}
                     target="_blank"
