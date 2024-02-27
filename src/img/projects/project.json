@@ -3,7 +3,7 @@
     { 
       "id": 1, 
       "name": "ImmoHub", 
-      "img": "./src/img/projects/ImmoHub.png", 
+      "img": "../src/img/projects/ImmoHub.png", 
       "Website": "https://verc-test-neon.vercel.app/",
       "description": "Unser Projekt " 
       
