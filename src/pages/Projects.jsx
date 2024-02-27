@@ -73,6 +73,7 @@ const Projects = () => {
                 </Link>
 
                 <h1 className=" p-3">{proj.name}</h1>
+                <p> {proj.description} </p>
                 {/* <p className=" mb-12 max-w-sm">{proj.description}</p> */}
                 <button className="btn    justify-center flex items-center">
                   <Link

@@ -12,7 +12,7 @@
       "id": 2, 
       "name": "Wetter App", 
       "img": "./src/img/projects/weather.png",
-      "Website": "weather-app-tairou97.vercel.app", 
+      "Website": "https://weather-app-mocha-nine.vercel.app/", 
       "description": "This is a project" 
     },
     { 
