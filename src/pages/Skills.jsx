@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Json from "../img/projects/project.json";
+import Json from "../img/data.json";
+import "./skills.css";
 
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
@@ -9,6 +10,8 @@ import { CursorContext } from "../context/CursorContext";
 
 const Skills = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
+  const [skills, setSkills] = useState(Json.skills);
+  console.log("skills", skills);
 
   return (
     <motion.section
@@ -54,94 +57,24 @@ const Skills = () => {
           <div
             onMouseEnter={mouserEnter}
             onMouseLeave={mouseLeaverEnter}
-            className="grid grid-cols-2 lg:gap-2"
+            className=" skills  p-2  lg:gap-2 md:gap-2 gap-2  gap-y-4"
           >
             {/* img  */}
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                // src="https://rapidapi.com/blog/wp-content/uploads/2018/06/logo-2582748_640.png"
-                alt=""
-              />
-            </div>
 
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                // src={
-                //   "https://rithmapp.s3-us-west-2.amazonaws.com/assets/node-logo.png"
-                // }
-                alt=""
-              />
-            </div>
-
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                // src={
-                //   "https://k2bindia.com/wp-content/uploads/2015/08/React.png"
-                // }
-                alt=""
-              />
-            </div>
-
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                // src={
-                //   "https://www.ankitweblogic.com/javascript/js_img/javascript.png"
-                // }
-                alt=""
-              />
-            </div>
-
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                // src={
-                //   "https://miro.medium.com/v2/resize:fit:1358/1*xwAIUbfad95lsuGf2n9nnA.jpeg"
-                // }
-                alt=""
-              />
-            </div>
-
-            <div
-              className="max-w-[250px] lg:max-w-[320px] 
-            h-[187px] lg:h-[220px] bg-accent overflow-hidden
-            "
-            >
-              <img
-                className="object-cover h-full lg:h-[220px] hover:scale-110 
-                transition-all duration-500 "
-                // src={
-                //   "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_640.png"
-                // }
-                alt=""
-              />
-            </div>
+            {skills.map((skill) => (
+              <div
+                className="max-w-[250px] lg:max-w-[320px] rounded-lg
+                h-[187px] lg:h-[220px] bg-accent overflow-hidden
+                "
+              >
+                <img
+                  className="object-cover h-full lg:h-[220px] hover:scale-110 
+                transition-all duration-500  flex items-center justify-center"
+                  src={skill.img}
+                  alt={skill.name}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

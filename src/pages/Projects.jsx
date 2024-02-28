@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Json from "../img/projects/project.json";
-import "../pages/project.css";
+import Json from "../img/data.json";
+import "./project.css";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { useContext } from "react";
@@ -18,7 +18,7 @@ const Projects = () => {
       animate={{ scale: 1, y: 0 }}
       exit={{ scale: 0, y: "100%" }}
       transition={transition1}
-      className=" flex items-center justify-center  bg-[#f5f5f5]"
+      className=" flex items-center justify-center   bg-[#f5f5f5]"
     >
       <div className="container  mx-auto h-full ">
         <div
@@ -34,7 +34,7 @@ const Projects = () => {
             transition={transition1}
             onMouseEnter={mouserEnter}
             onMouseLeave={mouseLeaverEnter}
-            className="flex flex-col lg:items-center w-full  "
+            className="flex flex-col lg:items-center w-full  mt-12 "
           >
             <h1 className="h1">Projects</h1>
             <p className=" mb-12 max-w-xl p-1 text-center">
@@ -54,36 +54,44 @@ const Projects = () => {
             </Link>
           </motion.div>
           {/* img  grid*/}
-          <div className="box-pro ">
+          <div className="box-pro shadow-2xl ">
             {projects.map((proj) => (
               <motion.div
                 initial={{ scale: 0, y: "80%" }}
                 animate={{ scale: 1, y: 0 }}
                 exit={{ scale: 0, y: "80%" }}
                 transition={transition1}
-                className=" proje   "
+                className=" proje rounded-t-lg shadow-2xl overflow-hidden "
                 key={proj.id}
               >
                 <Link
+                  className="max-w-[250px] lg:max-w-[320px] rounded-lg
+                h-[187px] lg:h-[220px] bg-accent overflow-hidden "
                   to={proj.Website}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className=" rounded-lg" src={proj.img} />
+                  <img
+                    className=" img hover:scale-110 
+                    transition-all duration-500 rounded-t-lg"
+                    src={proj.img}
+                  />
                 </Link>
 
-                <h1 className=" p-3">{proj.name}</h1>
+                <h1 className=" mt-7">{proj.name}</h1>
                 <p> {proj.description} </p>
                 {/* <p className=" mb-12 max-w-sm">{proj.description}</p> */}
-                <button className="btn    justify-center flex items-center">
-                  <Link
-                    to={proj.Website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                  </Link>
-                </button>
+                <div className="flex justify-center items-center shadow-xl">
+                  <button className="btn  shadow-xl  ">
+                    <Link
+                      to={proj.Website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Project
+                    </Link>
+                  </button>
+                </div>
               </motion.div>
             ))}
           </div>

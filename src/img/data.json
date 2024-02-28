@@ -3,10 +3,9 @@
     { 
       "id": 1, 
       "name": "ImmoHub", 
-      "img": "../src/img/projects/ImmoHub.png", 
+      "img": "./src/img/projects/ImmoHub.png", 
       "Website": "https://verc-test-neon.vercel.app/",
-      "description": "Unser Projekt " 
-      
+      "description": "Unser Projekt" 
     },
     { 
       "id": 2, 
@@ -50,5 +49,55 @@
       "Website": "https://tairoumou.com/z-projekte/3_3-column-preview-card-component-main%20Kopie/index.html",
       "description": "This is a project" 
     }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "img": "./src/img/skills/html.png"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "img": "./src/img/skills/css.png"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "img": "./src/img/skills/js.png"
+    },
+    {
+      "id": 4,
+      "name": "React",
+      "img": "./src/img/skills/react.png"
+    },
+    {
+      "id": 5,
+      "name": "Node.js",
+      "img": "./src/img/skills/node.png"
+    },
+    {
+      "id": 6,
+      "name": "Git",
+      "img": "./src/img/skills/git.png"
+    },
+    {
+      "id": 7,
+      "name": "GitHub",
+      "img": "./src/img/skills/github.png"
+   
+    }
+    ,   {
+      "id": 8,
+      "name": "Linux",
+      "img": "./src/img/skills/linux.png"
+    },
+   {
+    "id": 9,
+    "name": "Tailwind CSS",
+    "img": "./src/img/skills/tailwind.png"
+ 
+  }
+
   ]
 }
