@@ -55,45 +55,46 @@ const Projects = () => {
           </motion.div>
           {/* img  grid*/}
           <div className="box-pro shadow-2xl ">
-            {projects.map((proj) => (
-              <motion.div
-                initial={{ scale: 0, y: "80%" }}
-                animate={{ scale: 1, y: 0 }}
-                exit={{ scale: 0, y: "80%" }}
-                transition={transition1}
-                className=" proje rounded-t-lg shadow-2xl overflow-hidden "
-                key={proj.id}
-              >
-                <Link
-                  className="max-w-[250px] lg:max-w-[320px] rounded-lg
-                h-[187px] lg:h-[220px] bg-accent overflow-hidden "
-                  to={proj.Website}
-                  target="_blank"
-                  rel="noopener noreferrer"
+            {projects &&
+              projects.map((proj) => (
+                <motion.div
+                  initial={{ scale: 0, y: "80%" }}
+                  animate={{ scale: 1, y: 0 }}
+                  exit={{ scale: 0, y: "80%" }}
+                  transition={transition1}
+                  className=" proje rounded-t-lg shadow-2xl overflow-hidden "
+                  key={proj.id}
                 >
-                  <img
-                    className=" img hover:scale-110 
+                  <Link
+                    className="max-w-[250px] lg:max-w-[320px] rounded-lg
+                h-[187px] lg:h-[220px] bg-accent overflow-hidden "
+                    to={proj.Website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className=" img hover:scale-110 
                     transition-all duration-500 rounded-t-lg"
-                    src={proj.img}
-                  />
-                </Link>
+                      src={proj.img}
+                    />
+                  </Link>
 
-                <h1 className=" mt-7">{proj.name}</h1>
-                <p> {proj.description} </p>
-                {/* <p className=" mb-12 max-w-sm">{proj.description}</p> */}
-                <div className="flex justify-center items-center shadow-xl">
-                  <button className="btn  shadow-xl  ">
-                    <Link
-                      to={proj.Website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Project
-                    </Link>
-                  </button>
-                </div>
-              </motion.div>
-            ))}
+                  <h1 className=" mt-7">{proj.name}</h1>
+                  <p> {proj.description} </p>
+                  {/* <p className=" mb-12 max-w-sm">{proj.description}</p> */}
+                  <div className="flex justify-center items-center shadow-xl">
+                    <button className="btn  shadow-xl  ">
+                      <Link
+                        to={proj.Website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Project
+                      </Link>
+                    </button>
+                  </div>
+                </motion.div>
+              ))}
           </div>
         </div>
       </div>
