@@ -48,6 +48,13 @@
       "img": "./src/img/projects/Column-Preview-Card.png", 
       "Website": "https://tairoumou.com/z-projekte/3_3-column-preview-card-component-main%20Kopie/index.html",
       "description": "This is a project" 
+    },
+    { 
+      "id": 8, 
+      "name": "Konak FMK", 
+      "img": "./src/img/projects/kfm.png", 
+      "Website": "https://konak-comp.vercel.app/",
+      "description": "This is a project" 
     }
   ],
   "skills": [
