@@ -3,14 +3,14 @@
     { 
       "id": 1, 
       "name": "ImmoHub", 
-      "img": "./src/assets/ImmoHub.png", 
+      "img": "./src/img/projects/ImmoHub.png", 
       "Website": "https://verc-test-neon.vercel.app/",
       "description": "Unser Projekt" 
     },
     { 
       "id": 2, 
       "name": "Wetter App", 
-      "img": "./src/assets//weather.png",
+      "img": "./src/img/projects/weather.png",
       "Website": "https://weather-app-mocha-nine.vercel.app/", 
       "description": "This is a project" 
     },
@@ -32,25 +32,40 @@
       "id": 5, 
       "name": "Single Price Grid Componen Master", 
       "img": "./src/img/projects/single-price-grid.png", 
-      "Website": "https://single-price-grid-component-master%20Kopie/index.html",
-      "description": "This is a project" 
+      "Website": "https://single-price-grid-component-master-ten.vercel.app/",
+      "description": "This is a project"
     },
     { 
+       
       "id": 6, 
-      "name": "Testimonials Grid Section", 
-      "img": "./src/img/projects/testimonials-grid.png", 
-      "Website": "https://1-testimonials-grid-section-main/testimonials-grid.html",
+      "name": "Layout Travel Destination Form", 
+      "img": "./src/img/projects/Responsive-Card.png",
+      "Website": "https://layout-travel-destination-form.vercel.app/", 
       "description": "This is a project" 
     },
     { 
       "id": 7, 
-      "name": "Column Preview Card", 
-      "img": "./src/img/projects/Column-Preview-Card.png", 
-      "Website": "https://tairoumou.com/z-projekte/3_3-column-preview-card-component-main%20Kopie/index.html",
+      "name": "Testimonials Grid Section", 
+      "img": "./src/img/projects/testimonials-grid.png", 
+      "Website": "",
       "description": "This is a project" 
     },
     { 
-      "id": 8, 
+      "id":8 , 
+      "name": "responsiveness-media-queries-page", 
+      "img": "./src/img/projects/Column-Preview-Card.png", 
+      "Website": "https://responsiveness-media-queries-page-layout.vercel.app/",
+      "description": "This is a project" 
+    },
+    { 
+      "id": 9, 
+      "name": "1-3 Column Preview Card", 
+      "img": "./src/img/projects/Column-Preview-Card.png", 
+      "Website": "https://1-3-column-preview-card-component-main.vercel.app/",
+      "description": "This is a project" 
+    },
+    { 
+      "id":10 , 
       "name": "Konak FMK", 
       "img": "./src/img/projects/kfm.png", 
       "Website": "https://konak-comp.vercel.app/",

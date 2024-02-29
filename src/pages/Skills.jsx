@@ -61,20 +61,21 @@ const Skills = () => {
           >
             {/* img  */}
 
-            {skills.map((skill) => (
-              <div
-                className="max-w-[250px] lg:max-w-[320px] rounded-lg
+            {skills &&
+              skills.map((skill) => (
+                <div
+                  className="max-w-[250px] lg:max-w-[320px] rounded-lg
                 h-[187px] lg:h-[220px] bg-accent overflow-hidden
                 "
-              >
-                <img
-                  className="object-cover h-full lg:h-[220px] hover:scale-110 
+                >
+                  <img
+                    className="object-cover h-full lg:h-[220px] hover:scale-110 
                 transition-all duration-500  flex items-center justify-center"
-                  src={skill.img}
-                  alt={skill.name}
-                />
-              </div>
-            ))}
+                    src={skill.img}
+                    alt={skill.name}
+                  />
+                </div>
+              ))}
           </div>
         </div>
       </div>
