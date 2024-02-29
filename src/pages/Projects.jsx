@@ -1,16 +1,35 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Json from "../img/data.json";
+
 import "./project.css";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { useContext } from "react";
+
 import { CursorContext } from "../context/CursorContext";
 
 const Projects = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
-  const [projects, setProjects] = useState(Json.projects);
-  console.log("projects", projects);
+  const [userData, setUserData] = useState(null);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(`  /data.json`);
+        console.log(response);
+
+        console.log(); // Fetch data.json from the public directory
+        const data = await response.json();
+
+        console.log(data);
+        setUserData(data);
+      } catch (error) {
+        console.error("Error fetching JSON data:", error);
+      }
+    }
+
+    fetchData();
+  }, []);
 
   return (
     <motion.section
@@ -55,45 +74,29 @@ const Projects = () => {
           </motion.div>
           {/* img  grid*/}
           <div className="box-pro shadow-2xl ">
-            {projects &&
-              projects.map((proj) => (
-                <motion.div
-                  initial={{ scale: 0, y: "80%" }}
-                  animate={{ scale: 1, y: 0 }}
-                  exit={{ scale: 0, y: "80%" }}
-                  transition={transition1}
-                  className=" proje rounded-t-lg shadow-2xl overflow-hidden "
-                  key={proj.id}
+            {userData &&
+              userData.projects.map((project, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col lg:items-center w-full  mt-12 "
                 >
-                  <Link
-                    className="max-w-[250px] lg:max-w-[320px] rounded-lg
-                h-[187px] lg:h-[220px] bg-accent overflow-hidden "
-                    to={proj.Website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      className=" img hover:scale-110 
-                    transition-all duration-500 rounded-t-lg"
-                      src={proj.img}
-                    />
-                  </Link>
+                  <img
+                    src={project.img}
+                    alt="project"
+                    className="w-full h-[300px] object-cover"
+                  />
+                  <h1 className="h1">{project.title}</h1>
+                  <p className=" mb-12 max-w-xl p-1 text-center">
+                    {project.description}
+                  </p>
 
-                  <h1 className=" mt-7">{proj.name}</h1>
-                  <p> {proj.description} </p>
-                  {/* <p className=" mb-12 max-w-sm">{proj.description}</p> */}
-                  <div className="flex justify-center items-center shadow-xl">
-                    <button className="btn  shadow-xl  ">
-                      <Link
-                        to={proj.Website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        View Project
-                      </Link>
-                    </button>
-                  </div>
-                </motion.div>
+                  <Link
+                    to={"/contact"}
+                    className="btn mb-[30px] mx-auto lg:mx-0 "
+                  >
+                    Hire me
+                  </Link>
+                </div>
               ))}
           </div>
         </div>

@@ -31,7 +31,7 @@
     { 
       "id": 5, 
       "name": "Single Price Grid Componen Master", 
-      "img": "./src/assets/single-price-grid.png", 
+      "img": "./src/img/projects/single-price-grid.png", 
       "Website": "https://single-price-grid-fawn-nine.vercel.app/",
       "description": "This is a project"
     },
@@ -39,28 +39,28 @@
        
       "id": 6, 
       "name": "Layout Travel Destination Form", 
-      "img": "./public/assets/travel-the-world.png",
+      "img": "./src/img/projects/travel-the-world.png",
       "Website": "https://layout-travel-destination-form.vercel.app/", 
       "description": "This is a project" 
     },
     { 
       "id": 7, 
       "name": "Travel The World", 
-      "img": "./public/assets/travel-the-world.png", 
+      "img": "./src/img/projects/travel-the-world.png", 
       "Website": "https://layout-travel-destination-form.vercel.app/",
       "description": "This is a project" 
     },
     { 
       "id":8 , 
       "name": "Responsiveness Media Queries Page", 
-      "img": "../public/assets/responsiveness-media-queries-page.png", 
+      "img": "./src/img/projects/responsiveness-media-queries-page.png", 
       "Website": "https://responsiveness-media-queries-page-layout.vercel.app/",
       "description": "This is a project" 
     },
     { 
       "id": 9, 
       "name": "1-3 Column Preview Card", 
-      "img": "./public/Column-Preview-Card.png", 
+      "img": "./src/img/projects/Column-Preview-Card.png", 
       "Website": "https://1-3-column-preview-card-component-main.vercel.app/",
       "description": "This is a project" 
     },
