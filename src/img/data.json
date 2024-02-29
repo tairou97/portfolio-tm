@@ -32,28 +32,28 @@
       "id": 5, 
       "name": "Single Price Grid Componen Master", 
       "img": "./src/img/projects/single-price-grid.png", 
-      "Website": "https://single-price-grid-component-master-ten.vercel.app/",
+      "Website": "https://single-price-grid-fawn-nine.vercel.app/",
       "description": "This is a project"
     },
     { 
        
       "id": 6, 
       "name": "Layout Travel Destination Form", 
-      "img": "./src/img/projects/Responsive-Card.png",
+      "img": "./src/img/projects/travel-the-world.png",
       "Website": "https://layout-travel-destination-form.vercel.app/", 
       "description": "This is a project" 
     },
     { 
       "id": 7, 
-      "name": "Testimonials Grid Section", 
-      "img": "./src/img/projects/testimonials-grid.png", 
-      "Website": "",
+      "name": "Travel The World", 
+      "img": "./src/img/projects/travel-the-world.png", 
+      "Website": "https://layout-travel-destination-form.vercel.app/",
       "description": "This is a project" 
     },
     { 
       "id":8 , 
-      "name": "responsiveness-media-queries-page", 
-      "img": "./src/img/projects/Column-Preview-Card.png", 
+      "name": "Responsiveness Media Queries Page", 
+      "img": "./src/img/projects/responsiveness-media-queries-page.png", 
       "Website": "https://responsiveness-media-queries-page-layout.vercel.app/",
       "description": "This is a project" 
     },
