@@ -31,7 +31,7 @@
     { 
       "id": 5, 
       "name": "Single Price Grid Componen Master", 
-      "img": "./public/assets/single-price-grid.png", 
+      "img": "./src/assets/single-price-grid.png", 
       "Website": "https://single-price-grid-fawn-nine.vercel.app/",
       "description": "This is a project"
     },
