@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Json from "../../public/data.json";
+import Json from "../img/data.json";
 import "./skills.css";
 
 import { motion } from "framer-motion";
