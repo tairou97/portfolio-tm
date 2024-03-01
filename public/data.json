@@ -60,7 +60,7 @@
     { 
       "id": 9, 
       "name": "1-3 Column Preview Card", 
-      "img": "./src/img/projects/Column-Preview-Card.png", 
+      "img": "./public/Column-Preview-Card.png", 
       "Website": "https://1-3-column-preview-card-component-main.vercel.app/",
       "description": "This is a project" 
     },
