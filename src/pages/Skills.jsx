@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Json from "../../json/data.json";
-import "./skills.css";
 
+import "./skills.css";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { useContext } from "react";
@@ -10,8 +9,23 @@ import { CursorContext } from "../context/CursorContext";
 
 const Skills = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
-  const [skills, setSkills] = useState(Json.skills);
-  console.log("skills", skills);
+  const [skills, setSkills] = useState([]);
+  // console.log("skills", skills);
+
+  useEffect(() => {
+    async function renderSkills() {
+      const url = "http://localhost:3000/skills";
+      try {
+        const resp = await fetch(url);
+        const data = await resp.json();
+        setSkills(data);
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    renderSkills();
+  }, []);
 
   return (
     <motion.section
@@ -67,6 +81,7 @@ const Skills = () => {
                   className="max-w-[250px] lg:max-w-[320px] rounded-lg
                 h-[187px] lg:h-[220px] bg-accent overflow-hidden
                 "
+                  key={skill.id}
                 >
                   <img
                     className="object-cover h-full lg:h-[220px] hover:scale-110 
