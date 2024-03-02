@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Json from "../../json/data.json";
+import Json from "../../public/json/data.json";
 import "./project.css";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
