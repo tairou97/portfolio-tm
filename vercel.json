@@ -2,4 +2,12 @@
     "rewrites": [
         {"source": "/(.*)", "destination": "/"}
     ]
+    ,
+    "version": 2,
+    "builds": [
+      {
+        "src": "public/**",
+        "use": "@vercel/static"
+      }
+    ]
 }
