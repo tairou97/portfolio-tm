@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import "./skills.css";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { useContext } from "react";
 import { CursorContext } from "../context/CursorContext";
+import Json from "../json/data.json";
 
 const Skills = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
-  const [skills, setSkills] = useState([]);
-  console.log("skills", skills);
+  // const [skills, setSkills] = useState([]);
+  // console.log("skills", skills);
+  const [skills, setSkills] = useState(Json.skills);
 
   useEffect(() => {
     async function renderSkills() {
-      const url = "http://localhost:8000/skills";
+      // const url = "http://localhost:8000/skills";
       try {
         const resp = await fetch(url);
         const data = await resp.json();

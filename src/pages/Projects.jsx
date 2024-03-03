@@ -5,11 +5,13 @@ import { transition1 } from "../transition";
 import { useContext } from "react";
 import { CursorContext } from "../context/CursorContext";
 import { Link } from "react-router-dom";
+import Json from "../json/data.json";
 
 const Projects = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
-  const [projects, setProjects] = useState([]);
-  console.log("projects", projects);
+  // const [projects, setProjects] = useState([]);
+  // console.log("projects", projects);
+  const [data, setData] = useState(Json.projects);
 
   useEffect(() => {
     async function renderProject() {
@@ -17,7 +19,7 @@ const Projects = () => {
       try {
         const resp = await fetch(url);
         const data = await resp.json();
-        setProjects(data);
+        setData(data);
         console.log(data);
       } catch (error) {
         console.error("Error fetching projects:", error);
@@ -69,8 +71,8 @@ const Projects = () => {
           </motion.div>
           {/* img  grid*/}
           <div className="box-pro shadow-2xl ">
-            {projects &&
-              projects.map((proj) => (
+            {data &&
+              data.map((proj) => (
                 <motion.div
                   initial={{ scale: 0, y: "80%" }}
                   animate={{ scale: 1, y: 0 }}
