@@ -20,7 +20,7 @@ const Projects = () => {
         setProjects(data);
         console.log(data);
       } catch (error) {
-        console.error(error);
+        console.error("Error fetching projects:", error);
       }
     }
     renderProject();

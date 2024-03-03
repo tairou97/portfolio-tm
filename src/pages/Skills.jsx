@@ -21,7 +21,7 @@ const Skills = () => {
         setSkills(data);
         console.log(data);
       } catch (error) {
-        console.error(error);
+        console.error("Error fetching projects:", error);
       }
     }
     renderSkills();
