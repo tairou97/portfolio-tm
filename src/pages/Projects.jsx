@@ -1,16 +1,30 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import Json from "../json/data.json";
 import "./project.css";
 import { motion } from "framer-motion";
 import { transition1 } from "../transition";
 import { useContext } from "react";
 import { CursorContext } from "../context/CursorContext";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
-  const [projects, setProjects] = useState(Json.projects);
+  const [projects, setProjects] = useState([]);
   console.log("projects", projects);
+
+  useEffect(() => {
+    async function renderProject() {
+      const url = "http://localhost:8000/projects";
+      try {
+        const resp = await fetch(url);
+        const data = await resp.json();
+        setProjects(data);
+        console.log(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    renderProject();
+  }, []);
 
   return (
     <motion.section
@@ -34,7 +48,7 @@ const Projects = () => {
             transition={transition1}
             onMouseEnter={mouserEnter}
             onMouseLeave={mouseLeaverEnter}
-            className="flex flex-col lg:items-center w-full  mt-12 "
+            className="flex justify-center items-center flex-col lg:items-center w-full  mt-12 "
           >
             <h1 className="h1">Projects</h1>
             <p className=" mb-12 max-w-xl p-1 text-center">

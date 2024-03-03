@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { CursorContext } from "./context/CursorContext";
 import About from "./pages/About";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const { cursorVariants, cursorBg } = useContext(CursorContext);
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <Header />
         <AnimRoutes />
+        <SpeedInsights />
       </Router>
 
       {/* cursor */}

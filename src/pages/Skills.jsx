@@ -10,11 +10,11 @@ import { CursorContext } from "../context/CursorContext";
 const Skills = () => {
   const { mouserEnter, mouseLeaverEnter } = useContext(CursorContext);
   const [skills, setSkills] = useState([]);
-  // console.log("skills", skills);
+  console.log("skills", skills);
 
   useEffect(() => {
     async function renderSkills() {
-      const url = "http://localhost:3000/skills";
+      const url = "http://localhost:8000/skills";
       try {
         const resp = await fetch(url);
         const data = await resp.json();
