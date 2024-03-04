@@ -84,7 +84,7 @@
       "id":10 , 
       "name": "Konak FMK", 
       "img": "https://i.ibb.co/vxL9vgJ/kfm.jpg", 
-      // "img": "./src/img/projects/kfm.png", 
+  
       "Website": "https://konak-comp.vercel.app/",
       "description": "This is a project" 
     }
