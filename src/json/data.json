@@ -62,14 +62,14 @@
     { 
       "id": 7, 
       "name": "Travel The World", 
-      "img": "./src/img/projects/travel-the-world.png", 
+      "img": "https://i.ibb.co/ydvPK1K/travel-the-world.jpg", 
       "Website": "https://layout-travel-destination-form.vercel.app/",
       "description": "This is a project" 
     },
     { 
       "id":8 , 
       "name": "Responsiveness Media Queries Page", 
-      "img": "i.ibb.co/F4mWhtr/responsiveness-media-queries-page.jpg", 
+      "img": "https://i.ibb.co/F4mWhtr/responsiveness-media-queries-page.jpg", 
       "Website": "https://responsiveness-media-queries-page-layout.vercel.app/",
       "description": "This is a project" 
     },
