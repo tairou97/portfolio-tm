@@ -3,14 +3,14 @@
     { 
       "id": 1, 
       "name": "ImmoHub", 
-      "img": "./src/img/projects/ImmoHub.png", 
+      "img": "https://i.ibb.co/SNjc7HZ/ImmoHub.jpg", 
       "Website": "https://verc-test-neon.vercel.app/",
       "description": "Unser Projekt" 
     },
     { 
       "id": 2, 
       "name": "Wetter App", 
-      "img": "./src/img/projects/weather.png",
+      "img": "https://i.ibb.co/D1L6wfg/Weather.jpg",
       "Website": "https://weather-app-mocha-nine.vercel.app/", 
       "description": "This is a project" 
     },
@@ -25,29 +25,29 @@
 
     { 
       "id": 12, 
-      "name": "Wetter App", 
-      "img": "    https://i.ibb.co/h2Dh7SZ/DSC04091.jpg",
-      "Website": "https://weather-app-mocha-nine.vercel.app/", 
+      "name": "Responsive-Card", 
+      "img": "    https://i.ibb.co/FKBZfz6/Responsive-Card.jpg" ,
+      "Website": "https://tairou97.github.io/responsive-card/", 
       "description": "This is a project" 
     },
     { 
       "id": 3, 
       "name": "Grid Document Layout", 
-      "img": "./src/img/projects/Grid-Layout.png",
+      "img": "https://i.ibb.co/wr1tL11/Grid-Layout.jpg",
       "Website": "https://tairou97.github.io/Grid-Document-Layout/", 
       "description": "This is a project" 
     },
     { 
       "id": 4, 
       "name": "A Grid Challange from Frontend Mentor", 
-      "img": "./src/img/projects/Responsive-Card.png",
+      "img": "https://i.ibb.co/9g24mmb/single-price-grid.jpg",
       "Website": "https://mini-projekt.vercel.app/", 
       "description": "This is a project" 
     },
     { 
       "id": 5, 
       "name": "Single Price Grid Componen Master", 
-      "img": "./src/img/projects/single-price-grid.png", 
+      "img": "https://i.ibb.co/4NtGj9C/testimonials-grid.jpg", 
       "Website": "https://single-price-grid-fawn-nine.vercel.app/",
       "description": "This is a project"
     },
@@ -55,7 +55,7 @@
        
       "id": 6, 
       "name": "Layout Travel Destination Form", 
-      "img": "./src/img/projects/travel-the-world.png",
+      "img": "https://i.ibb.co/ydvPK1K/travel-the-world.jpg",
       "Website": "https://layout-travel-destination-form.vercel.app/", 
       "description": "This is a project" 
     },
@@ -69,7 +69,7 @@
     { 
       "id":8 , 
       "name": "Responsiveness Media Queries Page", 
-      "img": "./src/img/projects/responsiveness-media-queries-page.png", 
+      "img": "i.ibb.co/F4mWhtr/responsiveness-media-queries-page.jpg", 
       "Website": "https://responsiveness-media-queries-page-layout.vercel.app/",
       "description": "This is a project" 
     },
@@ -83,7 +83,8 @@
     { 
       "id":10 , 
       "name": "Konak FMK", 
-      "img": "./src/img/projects/kfm.png", 
+      "img": "https://i.ibb.co/vxL9vgJ/kfm.jpg", 
+      // "img": "./src/img/projects/kfm.png", 
       "Website": "https://konak-comp.vercel.app/",
       "description": "This is a project" 
     }
