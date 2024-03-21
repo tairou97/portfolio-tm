@@ -93,48 +93,59 @@
     {
       "id": 1,
       "name": "HTML",
-      "img": "./src/img/skills/html.png"
+      "img": "https://i.ibb.co/wKPbXGB/652583-code-develop-html-language-layout-icon.png"
     },
     {
       "id": 2,
       "name": "CSS",
-      "img": "./src/img/skills/css.png"
+      "img": "https://i.ibb.co/6rRqJ6h/652584-code-css-develop-language-layout-icon.png"
     },
     {
       "id": 3,
       "name": "JavaScript",
-      "img": "./src/img/skills/js.png"
+      "img": "https://i.ibb.co/M5WhHsh/652581-code-command-develop-javascript-language-icon.png"
     },
     {
       "id": 4,
-      "name": "React",
-      "img": "./src/img/skills/react.png"
+      "name": "React.js",
+      "img": "https://i.ibb.co/YPDPbdJ/1174949-js-react-js-logo-react-react-native-icon.png"
     },
     {
       "id": 5,
       "name": "Node.js",
-      "img": "./src/img/skills/node.png"
+      "img": "https://i.ibb.co/F6Vshgt/1269842-development-install-javascript-js-node-icon.png"
     },
     {
       "id": 6,
       "name": "Git",
-      "img": "./src/img/skills/git.png"
+      "img": "https://i.ibb.co/N6gYV2R/2993773-git-social-media-icon.png"
     },
     {
       "id": 7,
       "name": "GitHub",
-      "img": "./src/img/skills/github.png"
+      "img": "https://i.ibb.co/RTS8VPc/652578-branch-contribute-files-github-manage-icon.png"
    
     }
     ,   {
       "id": 8,
       "name": "Linux",
-      "img": "./src/img/skills/linux.png"
+      "img": "https://i.ibb.co/3f6w49K/652577-linux-os-penguin-platform-server-icon.png"
     },
    {
     "id": 9,
     "name": "Tailwind CSS",
-    "img": "./src/img/skills/tailwind.png"
+    "img": "https://i.ibb.co/hLnJ35X/9074204-tailwind-icon.png"
+ 
+  },
+  {
+    "id": 10,
+    "name": "MongoDB",
+    "img": "https://i.ibb.co/YcYFygV/pngegg-1.png"
+ 
+  },  {
+    "id": 11,
+    "name": "Express.js",
+    "img": "https://i.ibb.co/ccQXT7y/pngegg-2.jpg"
  
   }
 
