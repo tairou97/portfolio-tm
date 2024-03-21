@@ -5,21 +5,21 @@
       "name": "ImmoHub", 
       "img": "https://i.ibb.co/SNjc7HZ/ImmoHub.jpg", 
       "Website": "https://verc-test-neon.vercel.app/",
-      "description": "Unser Projekt" 
+      "description": "This is a Html, Css and Bootstrip project" 
     },
     { 
       "id": 2, 
       "name": "Wetter App", 
       "img": "https://i.ibb.co/D1L6wfg/Weather.jpg",
       "Website": "https://weather-app-mocha-nine.vercel.app/", 
-      "description": "This is a project" 
+      "description": "This is a React project" 
     },
     { 
       "id": 11, 
       "name": "Band landing page", 
       "img": "https://i.ibb.co/XybdyR5/7-FD86892-0-C79-4-C3-A-B35-A-C9300-EF3-FDB5-1-201-a.jpg",
       "Website": "https://react-layout-xi.vercel.app/guitar", 
-      "description": "This is a project" 
+      "description": "This is a React project " 
     },
 
 
@@ -64,7 +64,7 @@
       "name": "Not Netflex", 
       "img": "https://i.ibb.co/mCGdYP8/Bildschirmfoto-2024-03-18-um-18-04-13.jpg", 
       "Website": "https://not-netflex.vercel.app/",
-      "description": "This is a project" 
+      "description": "This is a Javascript project" 
     },
     { 
       "id":8 , 
@@ -86,7 +86,7 @@
       "img": "https://i.ibb.co/vxL9vgJ/kfm.jpg", 
   
       "Website": "https://konak-comp.vercel.app/",
-      "description": "This is a project" 
+      "description": "This is a React project" 
     }
   ],
   "skills": [
