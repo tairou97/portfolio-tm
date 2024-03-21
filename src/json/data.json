@@ -5,7 +5,7 @@
       "name": "ImmoHub", 
       "img": "https://i.ibb.co/SNjc7HZ/ImmoHub.jpg", 
       "Website": "https://verc-test-neon.vercel.app/",
-      "description": "This is a Html, Css and Bootstrip project" 
+      "description": "This is a Html, Css and Bootstrap project" 
     },
     { 
       "id": 2, 
@@ -146,6 +146,11 @@
     "id": 11,
     "name": "Express.js",
     "img": "https://i.ibb.co/ccQXT7y/pngegg-2.jpg"
+ 
+  }, {
+    "id": 12,
+    "name": "Bootstrap",
+    "img": "https://i.ibb.co/PZfP75G/pngegg-3.jpg"
  
   }
 
