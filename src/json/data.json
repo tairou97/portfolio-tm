@@ -42,14 +42,14 @@
       "name": "A Grid Challange from Frontend Mentor", 
       "img": "https://i.ibb.co/9g24mmb/single-price-grid.jpg",
       "Website": "https://mini-projekt.vercel.app/", 
-      "description": "This is a project" 
+      "description": "This is a Html and Css  project" 
     },
     { 
       "id": 5, 
       "name": "Single Price Grid Componen Master", 
       "img": "https://i.ibb.co/4NtGj9C/testimonials-grid.jpg", 
       "Website": "https://single-price-grid-fawn-nine.vercel.app/",
-      "description": "This is a project"
+      "description": "This is a Html and Css  project"
     },
     { 
        
@@ -57,7 +57,7 @@
       "name": "Layout Travel Destination Form", 
       "img": "https://i.ibb.co/ydvPK1K/travel-the-world.jpg",
       "Website": "https://layout-travel-destination-form.vercel.app/", 
-      "description": "This is a project" 
+      "description": "This is a Html and Css  project" 
     },
     { 
       "id": 7, 
@@ -71,14 +71,14 @@
       "name": "Responsiveness Media Queries Page", 
       "img": "https://i.ibb.co/F4mWhtr/responsiveness-media-queries-page.jpg", 
       "Website": "https://responsiveness-media-queries-page-layout.vercel.app/",
-      "description": "This is a project" 
+      "description": "This is a Html and Css  project" 
     },
     { 
       "id": 9, 
       "name": "1-3 Column Preview Card", 
       "img": "https://i.ibb.co/Pm5GtQW/Column-Preview-Card.jpg", 
       "Website": "https://1-3-column-preview-card-component-main.vercel.app/",
-      "description": "This is a project" 
+      "description": "This is a Html and Css  project" 
     },
     { 
       "id":10 , 
