@@ -26,7 +26,7 @@
     { 
       "id": 12, 
       "name": "Responsive-Card", 
-      "img": "    https://i.ibb.co/FKBZfz6/Responsive-Card.jpg" ,
+      "img": "https://i.ibb.co/FKBZfz6/Responsive-Card.jpg",
       "Website": "https://tairou97.github.io/responsive-card/", 
       "description": "This is a project" 
     },
@@ -61,9 +61,9 @@
     },
     { 
       "id": 7, 
-      "name": "Travel The World", 
-      "img": "https://i.ibb.co/ydvPK1K/travel-the-world.jpg", 
-      "Website": "https://layout-travel-destination-form.vercel.app/",
+      "name": "Not Netflex", 
+      "img": "https://i.ibb.co/mCGdYP8/Bildschirmfoto-2024-03-18-um-18-04-13.jpg", 
+      "Website": "https://not-netflex.vercel.app/",
       "description": "This is a project" 
     },
     { 
