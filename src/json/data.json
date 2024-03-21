@@ -142,12 +142,14 @@
     "name": "MongoDB",
     "img": "https://i.ibb.co/FBXSGzm/pngegg-5.png"
  
-  },  {
+  },  
+  {
     "id": 11,
     "name": "Express.js",
     "img": "https://i.ibb.co/0f6d1BR/pngegg-4.png"
  
-  }, {
+  }, 
+  {
     "id": 12,
     "name": "Bootstrap",
     "img": "https://i.ibb.co/B6b2xJk/pngegg-3.png"
